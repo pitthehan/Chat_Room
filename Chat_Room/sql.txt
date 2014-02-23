@@ -1,0 +1,9 @@
+create database chat;
+
+create table messages(
+id int unsigned  primary key auto_increment,
+sender varchar(64) not null,
+receiver varchar(64) not null,
+content varchar(3600) not null,
+sendTime datetime not null,
+isReceived tinyint default 0)
